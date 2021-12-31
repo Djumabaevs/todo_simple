@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 class TaskTile extends StatelessWidget {
   final bool isChecked;
   final String taskTitle;
-  final Function checkboxCallback;
+  final VoidCallback checkboxCallback;
   final VoidCallback longPressCallback;
 
   TaskTile(
