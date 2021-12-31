@@ -5,7 +5,7 @@ import 'package:todo_simple/models/task_data.dart';
 class AddTaskScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    String? newTaskTitle;
+    String newTaskTitle = "";
 
     return Container(
       color: Color(0xff757575),
@@ -45,7 +45,7 @@ class AddTaskScreen extends StatelessWidget {
               ),
               color: Colors.lightBlueAccent,
               onPressed: () {
-                Provider.of<TaskData>(context).addTask(newTaskTitle!);
+                Provider.of<TaskData>(context).addTask(newTaskTitle);
                 Navigator.pop(context);
               },
             ),
